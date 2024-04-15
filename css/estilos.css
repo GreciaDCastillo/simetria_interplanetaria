@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Abril";
+    src: url("../fonts/AbrilFatface-Regular.otf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Fira";
+    src: url("../fonts/FiraSans-Medium.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Fira";
+    src: url("../fonts/FiraSans-Bold.otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Fira";
+    src: url("../fonts/FiraSans-MediumItalic.otf");
+    font-style: italic;
+}
+
+:root{
+    box-sizing:border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: "Fira";
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 0.6em;
+}
+strong{
+    font-weight: 700;
+}
+em{
+    font-style: italic;
+}
+body{
+    font-size: 18px;
+}
+.contenedor header{
+    padding:2em;
+    background: yellow;
+}
+
+.contenedor header h1{
+    font-family: "Abril", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+   margin-bottom: 0.4em;
+    letter-spacing: 0.07em;
+    line-height: 1.1;
+    text-align: right;
+    text-transform: uppercase;
+}
+.contenedor header h2{
+    font-family: "Abril", Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    margin-bottom: 2em;
+}
+.contenedor header blockquote{
+    font-family: "Fira";
+    font-style: italic;
+    text-align: right;
+    font-size: .8em;
+}
+
+main{
+    padding: 2em;
+}
+/*MEDIA QUERIES */
+@media screen and (min-width:431px){
+   .contenedor header{
+    padding: 3em
+   }
+   .contenedor header h1{
+    text-align: left;
+    font-size: 48px;
+   }
+   .contenedor header h2{
+    text-align: left;
+    font-size: 2.4em;
+    margin-bottom: .5em;
+   }
+   .contenedor header blockquote{
+    font-size: 1em;
+   }
+   main{
+    padding: 3em;
+
+   }
+}
+@media screen and (min-width:1025px){
+    main{
+        padding-right: 600px;
+    }
+}
