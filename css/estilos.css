@@ -92,22 +92,34 @@ h2{
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
-.contenedor img{
+.contenedor main {
+    margin: 5em auto;
+    padding: 1em 10em;
+    max-width: 1200px;
+
+}
+.contenedor main .cont{
     
+    background-color: whitesmoke;
+    padding: 4em;
+    margin-top: 2em;
     margin-bottom: 2em;
-    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+}
+.contenedor img{
+    float: right;
+    margin-bottom: 2em;
+    padding: 0 1em 1em 1em;
+    width: 50%;
     display: block;
 }
 .contenedor header{
     background: #203957;
     padding: 4% 10%;
 }
-.contenedor header h1{
-    
-}
-.contenedor header h2{
-    
-}
+
 blockquote{
     font-family: "Poppins";
     font-style: italic;
@@ -116,24 +128,42 @@ blockquote{
     margin-bottom: 0.5em;
     text-align: right;
 }
-main {
-    margin: 5em auto;
-    width: 80%;
-}
+
 /*MEDIA QUERIES */
 
 @media screen and (max-width: 575.98px) {
+    /* Estilos específicos para pantallas de 0px a 575px de ancho */
+    header{
+        padding: 4% 10%;
+    }
+    .contenedor main {
+        padding: 1em;
+
+    }
+    .contenedor main .cont{
+        padding: 1em;
+    }
     h1 {
         font-size: 2em;
+        margin-bottom: 0.3em;
+        width: 200px;
+        line-height: 1.1;
+        letter-spacing: 0.1em;
     }
 
     p {
         font-size: 0.9em;
+        margin-bottom: 0.5em;
+
     }
-    img{
+    .contenedor img {
+        float: none;
         width: 90%;
-        padding-bottom: 4em;
+        padding: 1em 0;
+        margin: auto;
+        
     }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
