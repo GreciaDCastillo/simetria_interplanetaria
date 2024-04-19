@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Abril";
+    src: url("../fonts/AbrilFatface-Regular.otf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Light.ttf");
+    font-weight: 300; 
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-LightItalic.ttf");
+    font-weight: 300; 
+    font-style: italic;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-weight: 400; 
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Italic.ttf");
+    font-weight: 400; 
+    font-style: italic;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.ttf");
+    font-weight: 600; 
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBoldItalic.ttf");
+    font-weight: 600; 
+    font-style: italic;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight: 700; 
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-BoldItalic.ttf");
+    font-weight: 700; 
+    font-style: italic;
+}
+:root{
+    box-sizing:border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: "Poppins";
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 0.6em;
+}
+strong{
+    font-weight: 500;
+}
+em{
+    font-style: italic;
+    font-weight: 400;
+}
+body{
+    font-size: 18px;
+    background: #b1c0cd;
+    color: #151e21;
+}
+h1{
+    font-family: "Abril";
+    font-weight: 800;
+    font-size: 2.8em;
+    margin-bottom: 0.4em;
+    letter-spacing: 0.07em;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+h2{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.contenedor main {
+    margin: 5em auto;
+    padding: 1em 10em;
+    max-width: 1200px;
+
+}
+.contenedor main .cont{
+    
+    background-color: whitesmoke;
+    padding: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+}
+.contenedor img{
+    float: right;
+    margin-bottom: 2em;
+    padding: 0 1em 1em 1em;
+    width: 50%;
+    display: block;
+}
+.contenedor header{
+    background: #203957;
+    padding: 4% 10%;
+}
+
+blockquote{
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    text-align: right;
+}
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width: 575.98px) {
+    /* Estilos específicos para pantallas de 0px a 575px de ancho */
+    header{
+        padding: 4% 10%;
+    }
+    .contenedor main {
+        padding: 1em;
+
+    }
+    .contenedor main .cont{
+        padding: 1em;
+    }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0.3em;
+        width: 200px;
+        line-height: 1.1;
+        letter-spacing: 0.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+
+    }
+    .contenedor img {
+        float: none;
+        width: 90%;
+        padding: 1em 0;
+        margin: auto;
+        
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    /* Estilos específicos para pantallas de 576px a 767px de ancho */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* Estilos específicos para pantallas de 768px a 991px de ancho */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /* Estilos específicos para pantallas de 992px a 1199px de ancho */
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        padding: 4% 20%;
+
+    }
+}
