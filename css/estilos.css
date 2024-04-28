@@ -1,55 +1,34 @@
+/*FUENTES*/
 @font-face {
-    font-family: "Abril";
-    src: url("../fonts/AbrilFatface-Regular.otf");
-    font-weight: 800;
+    font-family: "Rufina";
+    src: url("../fonts/Rufina-Regular.ttf");
+    font-weight: 400;
 }
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Light.ttf");
-    font-weight: 300; 
+    font-family: "Rufina";
+    src: url("../fonts/Rufina-Bold.ttf");
+    font-weight: 700;
 }
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-LightItalic.ttf");
-    font-weight: 300; 
+    font-family: "PTserif";
+    src: url("../fonts/PTSerif-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "PTserif";
+    src: url("../fonts/PTSerif-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "PTserif";
+    src: url("../fonts/PTSerif-Italic.ttf");
     font-style: italic;
+    font-weight: 400;
 }
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf");
-    font-weight: 400; 
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Italic.ttf");
-    font-weight: 400; 
-    font-style: italic;
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Medium.ttf");
-    font-weight: 500;
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-SemiBold.ttf");
-    font-weight: 600; 
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-SemiBoldItalic.ttf");
-    font-weight: 600; 
-    font-style: italic;
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Bold.ttf");
-    font-weight: 700; 
-}
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-BoldItalic.ttf");
-    font-weight: 700; 
+    font-family: "PTserif";
+    src: url("../fonts/PTSerif-BoldItalic.ttf");
+    font-weight: 700;
     font-style: italic;
 }
 :root{
@@ -60,127 +39,230 @@
     padding: 0;
 }
 p{
-    font-family: "Poppins";
-    font-weight: 300;
+    font-family: "PTserif";
+    font-weight: 400;
     line-height: 1.3;
-    margin-bottom: 0.6em;
+    margin-bottom: 1.8em;
+
 }
 strong{
-    font-weight: 500;
+    font-weight: 800;
 }
 em{
     font-style: italic;
     font-weight: 400;
+
 }
 body{
-    font-size: 18px;
-    background: #b1c0cd;
+    font-size: 14px;
+    background: #e8e4e1;
     color: #151e21;
 }
 h1{
-    font-family: "Abril";
+    font-family: "Rufina";
     font-weight: 800;
-    font-size: 2.8em;
+    font-size: 1.9em;
+    margin-top: 0.5em;
     margin-bottom: 0.4em;
     letter-spacing: 0.07em;
     line-height: 1.1;
     text-transform: uppercase;
 }
 h2{
-    font-family: "Poppins";
+    font-family: "Rufina";
     font-weight: 400;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
+
+.contenedor{
+    background: whitesmoke;
+    margin: 1em;
+}
 .contenedor main {
-    margin: 5em auto;
-    padding: 1em 10em;
+    margin: auto;
+    padding: 1.5em;
     max-width: 1200px;
 
 }
-.contenedor main .cont{
-    
-    background-color: whitesmoke;
-    padding: 4em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    
+.contenedor img {
+    display: block; /* Para convertir la imagen en un bloque */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    margin-bottom: 2em; /* Margen inferior */
+    width: 60%;
+    max-width: 100%; /* Ajustar imagen al ancho del contenedor */
 }
-.contenedor img{
-    float: right;
-    margin-bottom: 2em;
-    padding: 0 1em 1em 1em;
-    width: 50%;
-    display: block;
-}
+
 .contenedor header{
-    background: #203957;
-    padding: 4% 10%;
+    padding: 1.5em 1em 0 1em; ;
+}
+hr{
+    margin: 1em 0;
+    border: 1px solid #d6c6bb;
 }
 
 blockquote{
-    font-family: "Poppins";
-    font-style: italic;
+    font-family: "PTserif";
+    font-style: bold;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin-bottom: 0.5em;
     text-align: right;
 }
 
 /*MEDIA QUERIES */
 
-@media screen and (max-width: 575.98px) {
-    /* Estilos específicos para pantallas de 0px a 575px de ancho */
-    header{
-        padding: 4% 10%;
+@media screen and ( max-width: 575.98px) {
+
+}
+
+/* Estilos para teléfonos móviles (landscape) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    h2 {
+        padding-bottom: 0;
+    }
+
+    .contenedor header{
+        padding: 0em 1em 0 1em;
+    }
+    
+    .contenedor{
+        margin: 1em;
+        padding: 1.4em;
+    }
+    .contenedor img{
+        float: right;
+        margin-bottom: 2em;
+        padding: 0 1em 1em 1em;
+        width: 40%;
+        display: block;
     }
     .contenedor main {
-        padding: 1em;
-
-    }
-    .contenedor main .cont{
-        padding: 1em;
-    }
-    h1 {
-        font-size: 2em;
-        margin-bottom: 0.3em;
-        width: 200px;
-        line-height: 1.1;
-        letter-spacing: 0.1em;
+        margin-top: 2em;
     }
 
-    p {
-        font-size: 0.9em;
-        margin-bottom: 0.5em;
-
-    }
-    .contenedor img {
-        float: none;
-        width: 90%;
-        padding: 1em 0;
-        margin: auto;
-        
-    }
-
+    
 }
 
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-    /* Estilos específicos para pantallas de 576px a 767px de ancho */
-}
-
+/* Estilos para tabletas */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     /* Estilos específicos para pantallas de 768px a 991px de ancho */
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    blockquote {
+        font-size: 1.2em;
+    }
+    p {
+    
+    }
+    .contenedor{
+        margin: 2em;
+        padding: 1.5em 2em;
+    }
+    .contenedor header{
+        padding: 1.5em 1em 0 1em;
+    }
+    hr{
+        margin: 1.5em ; 
+    }
+    .contenedor main {
+        margin-top: 0;
+        padding: 2.5em;
+    }
+    .contenedor img{
+        float: right;
+        margin-bottom: 2em;
+        padding: 0 1.5em 1.5em 1.5em;
+        width: 50%;
+        display: block;
+    }
+   
 }
 
+/* Estilos para laptops/monitores pequeños */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-    /* Estilos específicos para pantallas de 992px a 1199px de ancho */
-}
 
-@media screen and (min-width: 1200px) {
-    header{
-        padding: 4% 20%;
+    h1 {
+        font-size: 2.5em;
+        width: 500px;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    blockquote {
+        font-size: 1.2em;
+    }
+    
+ 
+    .contenedor{
+        margin: 2em 12em;
+        padding: 1.5em;
 
     }
+    .contenedor header{
+        padding: 1.5em 1em 0 1em;
+    }
+    hr{
+        margin: 1.5em ; 
+    }
+
+    .contenedor main {
+        margin-top: 0;
+  
+    
+    }
+    .contenedor img{
+        float: right;
+        margin-bottom: 2em;
+        padding: 0 1.5em 1.5em 1.5em;
+        width: 50%;
+        display: block;
+    }
+    p {
+        padding-bottom: 0;
+    };
+}
+
+/* Estilos para monitores grandes/desktops */
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 2.8em;
+        width: 500px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    blockquote {
+        font-size: 1.2em;
+        text-align: initial;
+    }
+    p {
+        padding-bottom: 0;
+    }
+
+    .contenedor{
+        margin: 2em 16em;
+        padding: 3em;
+    }
+    .contenedor hr {
+  
+        margin: 5em 0;
+    }
+    .contenedor img{
+        float: right;
+        margin-bottom: 2em;
+        padding: 0 1.5em 1.5em 1.5em;
+        display: block;
+        width: 60%;
+    }
+    
+    
+    
 }
